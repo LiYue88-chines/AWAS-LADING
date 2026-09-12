@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 13px 20px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#menu button,
+#gameOver button {
+  background: #00c853;
+  color: white;
+}
+
+#game {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#arena {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background: linear-gradient(#222, #333);
+  border: 3px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#player {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 45px;
+  width: 55px;
+  height: 55px;
+}
+
+.knife {
+  position: absolute;
+  top: -60px;
+  font-size: 40px;
+  width: 50px;
+  height: 55px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls button {
+  width: 100px;
+  height: 60px;
+  font-size: 28px;
+  background: white;
+}
+
+#leaderboard {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.score-row {
+  padding: 8px;
+  border-bottom: 1px solid #444;
+}

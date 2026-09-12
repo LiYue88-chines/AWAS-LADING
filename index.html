@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hindari Pisau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- FORM AWAL -->
+    <div id="menu">
+      <h1>🔪 HINDARI PISAU</h1>
+      <p>Hindari semua pisau yang jatuh!</p>
+
+      <input type="text" id="username" placeholder="Username" maxlength="16">
+      <input type="tel" id="nomor" placeholder="Nomor WhatsApp">
+
+      <button onclick="mulaiGame()">MULAI GAME</button>
+
+      <h2>🏆 LEADERBOARD</h2>
+      <div id="leaderboard">Memuat...</div>
+    </div>
+
+    <!-- GAME -->
+    <div id="game" class="hidden">
+
+      <div class="top">
+        <span>Skor: <b id="score">0</b></span>
+        <span>Kecepatan: <b id="speedText">1</b></span>
+      </div>
+
+      <div id="arena">
+        <div id="player">🧍</div>
+      </div>
+
+      <div class="controls">
+        <button id="left">⬅️</button>
+        <button id="right">➡️</button>
+      </div>
+
+    </div>
+
+    <!-- GAME OVER -->
+    <div id="gameOver" class="hidden">
+      <h1>GAME OVER</h1>
+      <p>Skor kamu:</p>
+      <h2 id="finalScore">0</h2>
+
+      <button onclick="mainLagi()">MAIN LAGI</button>
+      <button onclick="keMenu()">MENU</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
