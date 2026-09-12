@@ -3,7 +3,7 @@
 // ===============================
 
 const URL_GOOGLE_SHEETS =
-  "URL_GOOGLE_SHEETS";
+  "https://script.google.com/macros/s/AKfycbz6h0KOW3_pNhrrIYYuynqymOnYWlRQJZEOGN-NQTzXyPin9pSrXcTiESIjg015ReOy/exec";
 
 // ===============================
 // VARIABEL GAME
